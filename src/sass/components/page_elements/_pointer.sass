@@ -1,0 +1,65 @@
+%pointer-arrow
+    content: ''
+    width: $cursor-size
+    height: $cursor-size
+    border: 3px solid #fff
+    position: absolute
+.pointer
+    position: absolute
+    &__container
+        max-width: 460px
+        position: relative
+    &__text
+        font-family: $myriadpro-cond
+        font-size: 38px
+        color: #fff
+        text-transform: uppercase
+        &_top
+            padding-left: 50px
+            text-align: right
+            border-bottom: 3px solid #fff
+        &_btm
+            padding-right: 50px
+            text-align: left
+            border-top: 3px solid #fff
+        &_left
+            padding-right: 100px
+            text-align: left
+            border-bottom: 3px solid #fff
+    &__arrow
+        max-width: inherit
+        height: 100px
+        position: relative
+        &_short
+            height: 50px
+        &_top
+            border-left: 3px solid #fff
+            &:after
+                @extend %pointer-arrow
+                bottom: -$cursor-size
+                left: -$cursor-size/2 - 1px
+        &_btm
+            border-right: 3px solid #fff
+            &:after
+                @extend %pointer-arrow
+                top: -$cursor-size
+                right: -$cursor-size/2 - 1px
+        &_btm-double
+            max-width: inherit
+            height: 40px
+            position: absolute
+            border-right: 3px solid #fff
+            transform: translate(-50%)
+            right: percentage(78/435)
+            bottom: 50px
+            &:after
+                @extend %pointer-arrow
+                top: -$cursor-size
+                right: -$cursor-size/2 - 1px
+        &_left
+            position: relative
+            &:after
+                @extend %pointer-arrow
+                bottom: -$cursor-size/2 + 2px
+                right: -$cursor-size
+            

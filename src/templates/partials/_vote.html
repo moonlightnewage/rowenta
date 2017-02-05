@@ -1,0 +1,56 @@
+<section class="vote">
+       <div class="vote__container_inner">
+        <div class="vote__block">
+            <h2 class="title vote__title">проголосуй за образ, який подобається тобі більше</h2>
+            <div class="container vote__container_block">
+                <div class="col">
+                    <div class="vote__photo-stack">
+                        <div class="vote__photo vote__photo_top-left" style="background-image: url(img/vote-straight.png)"></div>
+                        <div class="vote__photo" style="background-image: url(img/vote-straight.png)"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="vote__photo-stack">
+                        <div class="vote__photo vote__photo_top-right" style="background-image: url(img/vote-curly.png)"></div>
+                        <div class="vote__photo" style="background-image: url(img/vote-curly.png)"></div>
+                    </div>
+                </div>
+                <div class="title vote__choice">або</div>
+            </div>
+            <div class="vote__row-top">
+                <div class="logo vote__logo">{{mixins.logo('vote')}}</div>
+            </div>
+            <div class="vote__row-btm">
+            <div class="extra-logo vote__extra-logo">
+                <div class="icon extra-logo__icon">
+                    <span class="icon__heart-small"></span>
+                </div>
+                <div class="extra-logo__heading">Premium care</div>
+            </div>
+            <h3 class="slogan">бездоганна укладка з турботою про волосся</h3>
+            </div>
+        </div>
+        <p class="vote__text">Поділіться створеним постом у мережі Фейсбук або Вконтакті та отримайте можливість виграти приз</p>
+        </div>
+    <div class="container vote__container">
+        <div class="col vote__col">
+            <div class="frame frame-btn vote__frame-btn_facebook">
+                    <button class="btn">
+                        <span class="btn__icon">{{mixins.icon('facebook')}}</span>
+                        <span class="btn__text btn__text_off">Поділитися</span>
+                        <span class="btn__text btn__text_on">Створити пост</span>
+                    </button>
+            </div>
+        </div>
+        <div class="col vote__col">
+            <div class="frame frame-btn vote__frame-btn_vk">
+                    <button class="btn">
+                        <span class="btn__icon">{{mixins.icon('vk')}}</span>
+                        <span class="btn__text btn__text_off">Поділитися</span>
+                        <span class="btn__text btn__text_on">Створити пост</span>
+                    </button>
+            </div>
+        </div>
+    </div>
+    <p class="vote__info">Публікуючи цей пост я погоджуюся з <a href="#" class="rules-link">Правилами акції</a></p>
+</section>

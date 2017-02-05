@@ -1,0 +1,58 @@
+.start-double
+    width: 100%
+    height: 90vh
+    position: relative
+    display: inline-block
+    &__col-left
+        padding: get-vh(150px) percentage(85/1400)
+        height: 90vh
+        +image('bg-left-start.jpg')
+        +cover
+        position: relative
+    &__col-right
+        padding: get-vh(150px) percentage(100/1400)
+        height: 90vh
+        +image('bg-right-start.jpg')
+        +cover
+        +clr
+        position: relative
+    &__title-top
+        font-family: $myriadpro-cond-light
+        font-size: 76px
+        color: #fff
+        text-align: center
+        position: absolute
+        top: get-vh(15px)
+    &__title-btm
+        width: 100%
+        bottom: get-vh(45px)
+        +clr
+    &__title-btm_left
+        width: 50%
+        float: left
+        text-align: right
+    &__title-btm_right
+        width: 50%
+        float: left
+        text-align: left
+    &__terms
+        max-width: 280px
+    &__terms-item
+        margin-bottom: 45px
+    &__switcher
+        left: 50%
+        transform: translate(-50%)
+    &__person
+        position: absolute
+        bottom: 0
+        +cover
+    &__person-left
+        +image('person-straight.png')
+        width: 332px
+        height: 715px
+        right: 0
+    &__person-right
+        +image('person-curly.png')
+        width: 359px
+        height: 704px
+        left: 0

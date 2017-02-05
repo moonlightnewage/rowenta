@@ -1,0 +1,67 @@
+.advantages
+    width: 100%
+    position: relative
+    min-height: 870px
+    &__person
+        width: 545px
+        height: percentage(845/870)
+        +image('person-advantages.png')
+        position: absolute
+        bottom: 0
+        right: 0
+    &__quote
+        font-style: italic
+        quotes: "\201C" "\201D"
+        &:before, &:after
+            color: $pink
+    &__list
+        width: 100%
+        max-width: 780px
+    &__row
+        +vertical
+        text-align: left
+        height: 200px
+    &__name
+        max-width: 280px
+        padding: 0 55px
+        font-family: $myriadpro-cond-light
+        font-size: 50px
+        text-transform: uppercase
+        text-align: center
+        display: inline-block
+        vertical-align: middle
+    &__desc
+        width: 100%
+        max-width: 490px
+        display: inline-block
+        vertical-align: middle
+        position: relative
+    &__text
+        font-family: $roboto
+        font-size: 24px
+    &__image
+        width: inherit
+        height: inherit
+        border: 3px solid $dark-gray
+        +cover
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+        &_on:hover
+            transition: all 0.3s ease
+            opacity: 0
+    &__frame
+        &:after
+            background-color: #fff
+            top: 16px
+            left: 16px
+        &_small
+            width: 246px
+            height: 242px
+            left: 490-246 + px
+            z-index: 9
+        &_large
+            width: 320px
+            height: 320px
+        

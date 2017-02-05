@@ -1,0 +1,71 @@
+.upload
+    width: 100%
+    padding: get-vh(75px) 0
+    &__container
+        border-bottom: 1px solid $light-gray
+        position: relative
+        &:before
+            content: ''
+            width: $margin
+            height: 1px
+            background-color: #fff
+            display: block
+            position: absolute
+            bottom: -1px
+            left: 0
+    &__container_inner
+        padding-top: get-vh(44px)
+        padding-bottom: get-vh(110px)
+    &__title
+        text-align: center
+        padding: get-vh(60px) 0
+    &__text
+        font-style: italic
+        text-align: center
+    &__block
+        width: 440px
+        height: 440px
+        margin: 0 auto
+        position: relative
+        &:hover
+            .upload__frame
+                transition: 0.3s
+                background-color: $very-light-gray
+                border: 3px solid $very-light-gray
+            .icon__upload-black
+                +s(upload-gray)
+            .upload__message_bold
+                transition: 0.3s
+                color: $bright-coral
+            .upload__image
+                transition: 0.3s
+                filter: grayscale(100%)
+    &__frame
+        width: inherit
+        height: inherit
+        border: 3px solid $coral
+        +vertical
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+        cursor: pointer
+    &__meta
+        display: inline-block
+        vertical-align: middle
+    &__message
+        font-family: $myriadpro-cond-light
+        font-size: 28px
+        text-transform: uppercase
+        margin-top: 24px
+    &__message_bold
+        font-family: $myriadpro-cond
+    &__image
+        width: inherit
+        height: inherit
+        +cover
+        opacity: 0.4
+        position: absolute
+        top: 28px
+        left: 28px
+        z-index: 0

@@ -1,0 +1,43 @@
+.start-left
+    width: 100%
+    height: 90vh
+    position: relative
+    display: inline-block
+    +image('bg-straight-start-left.jpg')
+    +cover
+    +clr
+    &__title-btm
+        top: get-vh(290px)
+        left: percentage(73/1400)
+    &__title-btm_left
+        font-size: 67px
+    &__terms
+        max-width: 1400px
+        margin: 0 auto
+        position: absolute
+        bottom: get-vh(70px)
+        left: 50%
+        transform: translate(-50%)
+        +clr
+    &__terms-item
+        float: left
+        width: 33%
+    &__text
+        text-align: left
+    &__prizes
+        right: percentage(73/1400)
+    &__block
+        display: inline-block
+        width: 180px
+        height: 100px
+        &:before
+            background-color: $pink
+        &:after
+            width: 360px
+            top: 15px
+            left: 15px
+    &__block-frame
+        &:after
+            border-color: $bright-pink
+    &__switcher
+        right: 0

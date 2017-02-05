@@ -1,0 +1,47 @@
+.btn
+    width: 400px
+    height: 90px
+    background-color: #fff
+    border: 3px solid $pink
+    font-family: $myriadpro-cond
+    font-weight: 400
+    font-size: 36px
+    color: #000
+    text-transform: uppercase
+    display: block
+    position: absolute
+    z-index: 1
+    &:hover
+        transition: 0.3s
+        background-color: $pink
+        .btn__text_off, .btn__icon
+            display: none
+        .btn__text_on
+            display: inline-block
+    &__icon
+        position: relative
+        left: -50px
+        .icon
+            fill: $blue
+            display: inline-block
+            vertical-align: middle
+        .icon-facebook
+            width: 36px
+            height: 64px
+        .icon-vk
+            width: 64px
+            height: 64px
+    &__text
+        vertical-align: middle
+    &__text_on
+        display: none
+
+.title
+    font-family: $myriadpro-cond-light
+    font-size: 68px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: center
+.lower-title
+    text-transform: lowercase
+    
