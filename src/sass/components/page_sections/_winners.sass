@@ -1,0 +1,64 @@
+.winners
+    background-color: #fff
+    margin-bottom: 20px
+    &__title
+        margin: 70px 0
+    &__container
+        position: relative
+        z-index: 1
+        background-color: #fff
+        border: 3px solid $dark-gray
+        width: inherit
+        height: inherit
+        padding: 35px
+    &__frame
+        width: 650px
+        height: 490px
+        margin: 0 auto
+        &:after
+            top: 16px
+            left: 16px
+            background-color: #fff
+    &__name
+        position: absolute
+        top: -25px
+        left: 50%
+        transform: translate(-50%)
+        display: inline-block
+        background-color: #fff
+        padding: 0 10px
+    &__frame_img
+        width: 239px
+        height: 239px
+        margin-right: 35px
+        display: inline-block
+        &:after
+            border-color: $light-pink
+        &-left
+            &:after
+                transform: rotate(-2deg)
+                top: 20px
+                left: 25px
+        &-right
+            &:after
+                transform: rotate(2deg)
+                top: 20px
+                right: -5px
+    &__photo
+        width: 269px
+        height: 269px
+        position: relative
+        z-index: 1
+    &__text
+        width: 50%
+        font-family: $myriadpro-cond
+        font-size: 30px
+        display: inline-block
+        vertical-align: bottom
+    &__prize
+        margin-top: 32px
+    &__prize-left
+        float: right
+    &__prize-right
+        float: left
+        

@@ -1,0 +1,35 @@
+.footer
+    min-height: 705px
+    background-color: #fff
+    position: relative
+    padding: 310px 0 100px 105px
+    &__container
+        width: 100%
+        height: 290px
+        background-color: $light-pink
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 0
+    &__title
+        text-align: left
+        font-size: 60px
+    &__text
+        position: relative
+        z-index: 1
+    &__frame
+        left: 105px
+        top: 50%
+        transform: translate(0, -50%)
+    &__btn
+        border-color: $light-pink
+        &:hover
+            background-color: $light-pink
+    &__person
+        width: 485px
+        height: 615px
+        +image('footer-person.png')
+        +cover
+        position: absolute
+        right: 0
+        bottom: 0

@@ -12,9 +12,15 @@ sayHello();
 
 $(document).ready(function() {
     var startPage = $('.start').slick({
-        prevArrow: $('.icon-arrow-left'),
-        nextArrow: $('.icon-arrow-right')
+        prevArrow: $('.icon__arrow-left'),
+        nextArrow: $('.icon__arrow-right')
     });
-   
+    
+    var products = $('.products-slider').slick({
+        infinite: false,
+        prevArrow: $('.products__icon_left'),
+        nextArrow: $('.products__icon_right')
+    });
+    
     dropdown('.features__btn');
 });

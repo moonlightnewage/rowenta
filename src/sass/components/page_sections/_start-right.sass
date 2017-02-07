@@ -3,58 +3,51 @@
     height: 90vh
     position: relative
     display: inline-block
+    vertical-align: top
     +image('bg-curly-start-right.jpg')
     +cover
     +clr
-    &__title-btm
-        top: get-vh(300px)
-        right: percentage(73/1400)
-    &__title-btm_right
+    &__question
         font-size: 54px
         color: #fff
-    &__terms
-        max-width: 1400px
-        margin: 0 auto
-        position: absolute
-        bottom: get-vh(70px)
-        left: 50%
-        transform: translate(-50%)
-    &__terms-item
+        float: right
+    &__prizes
         float: left
-        width: 33%
+        width: 369px
+    &__prize
+        position: relative
+        margin-bottom: 40px
+        &:after
+            content: ''
+            width: 347px
+            height: 96px
+            background-color: #000
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 0
+    &__block
+        width: 347px
+        height: 96px
+        border: 3px solid $bright-pink
+        position: relative
+        top: 13px
+        left: 13px
+        z-index: 1
+    &__terms
+        width: 100%
+        margin: 0 auto
+    &__term
+        width: 32%
+        display: inline-block
+        color: #fff
         &:before
             font-family: $sitka
-            font-style: italic
-            font-weight: 600
-            font-size: 186px
-            color: #fff
-            line-height: 1
-            text-transform: lowercase
+            font-size: 200px
     &__text
         font-family: $sitka
-        font-style: italic
-        font-weight: 600
-        font-size: 34px
-        color: #fff
-        line-height: 46.52/34
+        font-size: 36px
         text-transform: lowercase
-    &__prizes
-        left: percentage(73/1400)
-    &__block
-        display: inline-block
-        width: 360px
-        height: 100px
-        &:before
-            background-color: #000
-            z-index: 0
-        &:after
-            width: 360px
-            top: 15px
-            left: 15px
-    &__block-frame
-        position: relative
-        &:after
-            border-color: $bright-pink
     &__switcher
         left: 0
     

@@ -1,6 +1,7 @@
 .features
     width: 100%
     min-height: 960px
+    padding-bottom: 140px
     overflow: hidden
     background-color: transparent
     position: relative
@@ -59,7 +60,7 @@
             left: -100px
     &__block
         width: 100%
-        max-width: 1177px
+        max-width: 1177px + $features-margin
         margin: 0 auto
     &__trigger
         width: 400px
@@ -74,15 +75,43 @@
         .icon-arrow-down-rounded
             width: 45px
             height: 45px
+            margin-left: $features-margin
     &__btn.is-open
         transition: all 1s ease
+        transform: translate($features-margin, 0)
         background: transparent
         border: none
-    &__name
+    &__item
         font-family: $myriadpro-cond
         font-size: 24px
         display: inline-block
-    &__desc
-        @extend .features__name
+        width: 210px
+        &_name
+            text-align: left
+        &_desc
+            text-align: right
+        &_check
+            padding-right: 25px
+        
+    &__container_inner
+        background-color: #fff
+        padding: 25px 48px
+        margin: 0 auto
+        margin-left: $features-margin
+        position: relative
+        z-index: 1
+    &__frame
+        width: 100%
+        height: 100%
+        margin: 0 auto
+        &:after
+            top: 26px
+            left: 26px + $features-margin
+    &__row
+        padding: 15px 0
+        &_left
+            text-align: left
+        &_right
+            text-align: right
         
         

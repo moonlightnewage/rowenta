@@ -3,41 +3,46 @@
     height: 90vh
     position: relative
     display: inline-block
+    vertical-align: top
     +image('bg-straight-start-left.jpg')
     +cover
     +clr
-    &__title-btm
-        top: get-vh(290px)
-        left: percentage(73/1400)
-    &__title-btm_left
+    &__question
+        font-family: $journalism
         font-size: 67px
-    &__terms
-        max-width: 1400px
-        margin: 0 auto
-        position: absolute
-        bottom: get-vh(70px)
-        left: 50%
-        transform: translate(-50%)
-        +clr
-    &__terms-item
+        color: #000
+        text-transform: uppercase
         float: left
-        width: 33%
-    &__text
-        text-align: left
     &__prizes
-        right: percentage(73/1400)
+        float: right
+        width: 369px
+    &__prize
+        position: relative
+        margin-bottom: 40px
+        &:after
+            content: ''
+            width: 347px
+            height: 96px
+            border: 3px solid $bright-pink
+            position: absolute
+            top: 13px
+            left: 13px
+            z-index: 0
     &__block
+        width: 182px
+        height: 102px
+        background-color: $light-pink
+        position: relative
+        z-index: 1
+    &__terms
+        width: 100%
+        margin: 0 auto
+    &__term
+        width: 32%
         display: inline-block
-        width: 180px
-        height: 100px
         &:before
-            background-color: $pink
-        &:after
-            width: 360px
-            top: 15px
-            left: 15px
-    &__block-frame
-        &:after
-            border-color: $bright-pink
+            width: 15%
+    &__text
+        width: 85%
     &__switcher
         right: 0

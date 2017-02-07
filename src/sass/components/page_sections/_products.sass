@@ -1,0 +1,65 @@
+.products
+    width: 100%
+    min-height: 905px
+    +image('products-bg.jpg')
+    +cover
+    position: relative
+    +clr
+    &__person
+        width: 755px
+        height: 845px
+        +image('products-person.png')
+        +cover
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: 0
+    &__container
+        width: 50%
+        min-height: 905px
+        float: right
+        //padding: 60px 0 70px
+        background-color: rgba(0, 0, 0, 0.5)
+        position: relative
+        z-index: 1
+    &__icons
+        width: 100%
+        padding: 0 30px
+        +vcenter
+        +clr
+    &__icon
+        cursor: pointer
+        width: 100px
+        height: 100px
+        position: relative
+        +vertical
+        &:hover
+            .icon__arrow-left-pink
+                +s(arrow-left-pink-hover)
+            .icon__arrow-right-pink
+                +s(arrow-right-pink-hover)
+            &:after
+                content: ''
+                width: inherit
+                height: inherit
+                border: 3px solid #000
+                position: absolute
+                top: 7px
+                left: 7px
+                z-index: 0
+            .products__icon_inner
+                width: inherit
+                height: inherit
+                background-color: #fff
+                border: 3px solid $dark-gray
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 1
+        &_inner
+            +vertical
+        &_left
+            float: left
+        &_right
+            float: right
+            
